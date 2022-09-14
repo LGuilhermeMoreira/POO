@@ -10,18 +10,25 @@ int main(){
     
     cout << "nome: ";
     getline(std::cin, nome);
+    
     cout << "endereco: ";
     getline(std::cin, endereco);
+    
     cout << "cidade: ";
     getline(std::cin, cidade);
+    
     cout << "estado: ";
     getline(std::cin, estado);
+    
     cout << "cep: ";
     getline(std::cin, cep);
+    
     cout << "telefone: ";
     getline(std::cin, telefone);
+    
     cout << "tipo de comida: ";
     getline(std::cin, tipo);
+    
     cout << "preco: ";
     cin >> preco;
 

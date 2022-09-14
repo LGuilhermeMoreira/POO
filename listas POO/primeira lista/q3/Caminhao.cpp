@@ -3,43 +3,51 @@
 using namespace std;
 
 // construtores
-Caminhao::Caminhao(float peso, float velmax, float preco, int num_cilindros, float potencia, float altura,float tonelada,float comprimento)
-:Motor(peso, velmax, preco, num_cilindros,potencia){
+Caminhao::Caminhao(float peso, float velmax, float preco, int num_cilindros, float potencia, float altura, float tonelada, float comprimento)
+    : Motor(peso, velmax, preco, num_cilindros, potencia)
+{
     setaltura(altura);
     settonelada(tonelada);
     setcomprimento(comprimento);
 };
 
 // sets
-void Caminhao::setaltura(float altura){
+void Caminhao::setaltura(float altura)
+{
     this->altura = altura;
 };
 
-void Caminhao::settonelada(float tonelada){
+void Caminhao::settonelada(float tonelada)
+{
     this->tonelada = tonelada;
 };
 
-void Caminhao::setcomprimento(float comprimento){
+void Caminhao::setcomprimento(float comprimento)
+{
     this->comprimento = comprimento;
 };
 
 // gets
 
-float Caminhao::getaltura(){
+float Caminhao::getaltura()
+{
     return altura;
 };
 
-float Caminhao::gettonelada(){
+float Caminhao::gettonelada()
+{
     return tonelada;
 };
 
-float Caminhao::getcomprimento(){
+float Caminhao::getcomprimento()
+{
     return comprimento;
 };
 
 // metodos
 
-void Caminhao::print_caminhao(){
+void Caminhao::print_caminhao()
+{
     print_motor();
     cout << "Caracteristicas do caminhao" << endl;
     cout << "altura: " << getaltura() << endl;
