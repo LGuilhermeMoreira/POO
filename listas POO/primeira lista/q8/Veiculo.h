@@ -4,18 +4,18 @@ using namespace std;
 class Veiculo{
 
     public:
-    Veiculo();
+        Veiculo();
 
-    float getPeso();
-    void setPeso(float);
+        float getPeso();
+        void setPeso(float);
 
-    float getValor();
-    void setValor(float);
+        float getValor();
+        void setValor(float);
 
-    float getAltura();
-    void setAltura(float);
+        float getAltura();
+        void setAltura(float);
 
-    void print();
+        void print();
     private:
         float peso;
         float valor;
