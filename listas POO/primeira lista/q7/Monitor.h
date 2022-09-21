@@ -2,9 +2,10 @@
 #include <string>
 #include "Funcionario.h"
 #include "Estudante.h"
+#pragma once
 using namespace std;
 
-class Monitor : public Funcionario, Estudante
+class Monitor : public Funcionario, public Estudante
 {
 private:
     string disciplina;

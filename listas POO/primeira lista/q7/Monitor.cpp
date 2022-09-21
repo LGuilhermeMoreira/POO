@@ -24,8 +24,8 @@ string Monitor::getdisciplina(){
 }
 
 void Monitor::print(){
-    cout << "Estudante/Funcionario" << endl << endl;
-    cout << "nome: " << Funcionario::getnome() << endl << "ou" << endl << "nome: " << Estudante::getnome() << endl;
+    cout << "Descrição" << endl << endl;
+    cout << "nome: " << Funcionario::getnome() << endl << "Apelido: " << Estudante::getnome() << endl;
     cout << "matricula: " << Estudante::getmatricula() << endl;
     cout << "Curso: " << Estudante::getcurso() << endl;
     cout << "turno: " << Funcionario::getturno() << endl;
