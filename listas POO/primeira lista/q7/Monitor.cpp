@@ -3,7 +3,7 @@
 #include<string>
 using namespace std;
 
-Monitor::Monitor(){
+Monitor::Monitor():Estudante(),Funcionario(){
 
 }
 
