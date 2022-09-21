@@ -10,11 +10,11 @@ void VeiculoAquatico::setTamanho(float tamanho){
     this -> tamanho = tamanho;
 };
 
-void VeiculoAquatico::setCor(string cor){
+void VeiculoAquatico::setCora(string cor){
     this -> cor = cor;
 };
 
-void VeiculoAquatico::setVel(float vel){
+void VeiculoAquatico::setVela(float vel){
     this -> Vel = vel;
 };
 

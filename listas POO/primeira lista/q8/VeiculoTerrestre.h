@@ -1,4 +1,5 @@
 #include <iostream>
+#pragma once
 #include "Veiculo.h"
 
 using namespace std;
@@ -9,13 +10,13 @@ class VeiculoTerrestre: virtual public Veiculo{
         VeiculoTerrestre();
 
         int getNum_rodas();
-        void setNum_rodas(int);
+        void setNum_rodasx(int);
 
         string getCor();
-        void setCor(string);
+        void setCort(string);
 
         float getVel();
-        void setVel(float); 
+        void setVelt(float); 
 
         void print();
     private:

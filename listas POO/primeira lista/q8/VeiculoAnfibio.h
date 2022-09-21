@@ -1,6 +1,7 @@
 #include <iostream>
 #include "VeiculoAquatico.h"
 #include "VeiculoTerrestre.h"
+#pragma once
 
 using namespace std;
 

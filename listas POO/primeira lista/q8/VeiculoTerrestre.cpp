@@ -6,17 +6,17 @@ using namespace std;
 VeiculoTerrestre::VeiculoTerrestre(){
 };
 
-void VeiculoTerrestre::setNum_rodas(int num_rodas)
+void VeiculoTerrestre::setNum_rodasx(int num_rodas)
 {
     this -> num_rodas = num_rodas;
 };
 
-void VeiculoTerrestre::setCor(string cor)
+void VeiculoTerrestre::setCort(string cor)
 {
     this -> cor = cor;
 };
 
-void VeiculoTerrestre::setVel(float vel)
+void VeiculoTerrestre::setVelt(float vel)
 {
     this -> vel = vel;
 };

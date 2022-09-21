@@ -1,7 +1,8 @@
 #include <iostream>
 #include "Veiculo.h"
-
+#pragma once
 using namespace std;
+
 
 class VeiculoAquatico: virtual public Veiculo{
 
@@ -12,10 +13,10 @@ class VeiculoAquatico: virtual public Veiculo{
         void setTamanho(float);
 
         string getCor();
-        void setCor(string);
+        void setCora(string);
 
         float getVel();
-        void setVel(float); 
+        void setVela(float); 
 
         void print();
 
