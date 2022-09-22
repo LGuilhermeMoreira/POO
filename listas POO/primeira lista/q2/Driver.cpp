@@ -13,6 +13,8 @@ int main(){
 
 
     CarroPasseio *car = new CarroPasseio(peso,velocidade_maxima,preco,numero_cilindros,potencia,cor,modelo);
-    car -> print_carropasseio();
+    car -> print();
 
+    car->setmodelo("lora");
+    car -> print();
 }

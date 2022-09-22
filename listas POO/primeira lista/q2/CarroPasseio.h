@@ -1,9 +1,9 @@
 #include <iostream>
 #include "Motor.h"
-#include<string>
+#include<string> 
 using namespace std;
 
-class CarroPasseio : public Veiculo,Motor{
+class CarroPasseio : public Motor{
     private:
         string cor;
         string modelo;
@@ -15,7 +15,7 @@ class CarroPasseio : public Veiculo,Motor{
         string getcor();
         string getmodelo();
         // metodos
-        void print_carropasseio();
+        void print();
         // construtores
         CarroPasseio();
         CarroPasseio(float peso, float velmax, float preco, int num_cilindros, float potencia,string cor, string modelo);

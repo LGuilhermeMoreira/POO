@@ -25,8 +25,8 @@ float Restaurante::getpreco(){
     return preco;
 };
 
-void Restaurante::printa(){
-    print();
+void Restaurante::print(){
+    Empresa::print();
     cout << "Tipo: " << gettipo() << endl;
     cout << "preco: " << getpreco() << endl;
 };

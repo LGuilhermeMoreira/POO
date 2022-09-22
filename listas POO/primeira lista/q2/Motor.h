@@ -18,5 +18,5 @@ public:
     Motor();
     Motor(float,float,float,int, float);
     // metodos
-    void print_motor();
+    void print();
 };

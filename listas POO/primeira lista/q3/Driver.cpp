@@ -12,5 +12,5 @@ int main(){
 
     Caminhao *c = new Caminhao(peso,velocidade_maxima,preco,numero_cilindros,potencia,altura,tonelada,comprimento);
 
-    c->print_caminhao();
+    c->print();
 }

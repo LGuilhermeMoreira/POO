@@ -32,8 +32,8 @@ void CarroPasseio::setmodelo(string modelo){
     this->modelo = modelo;
 };
 
-void CarroPasseio::print_carropasseio(){
-    print_motor();
+void CarroPasseio::print(){
+    Motor::print();
     cout << "caracteristicas do carro de passeio" << endl;
     cout << "cor: " << getcor() << endl;
     cout << "modelo: " << getmodelo() << endl;

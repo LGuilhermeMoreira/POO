@@ -14,7 +14,7 @@ class Restaurante : public Empresa{
         void settipo(string);
         void setpreco(float);
         // metodos
-        void printa();
+        void print();
     private:
         string tipo;
         float preco;

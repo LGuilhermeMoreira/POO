@@ -39,9 +39,9 @@ Motor::Motor(float peso, float velmax, float preco, int num_cilindros, float pot
 
 // metodos
 
-void Motor::print_motor()
+void Motor::print()
 {
-    print();
+    Veiculo::print();
     cout << endl
          << "caracteristicas do Motor" << endl;
     cout << "numero de cilindros: " << getnum_cilindros() << endl;

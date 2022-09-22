@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#pragma once
 using namespace std;
 
 class Pacote
@@ -20,65 +21,18 @@ private:
 
 public:
     // sets
-    void SetNomeDestinatario(string nomeDestinatario)
-    {
-        this->nomeDestinatario = nomeDestinatario;
-    }
-
-    void SetEnderecoDestinatario(string enderecoDestinatario)
-    {
-        this->enderecoDestinatario = enderecoDestinatario;
-    }
-
-    void SetCidadeDestinatario(string cidadeDestinatario)
-    {
-        this->cidadeDestinatario = cidadeDestinatario;
-    }
-
-    void SetEstadoDestinatario(string estadoDestinatario)
-    {
-        this->estadoDestinatario = estadoDestinatario;
-    }
-
-    void SetCepDestinatario(string cepDestinatario)
-    {
-        this->cepDestinatario = cepDestinatario;
-    }
-
-    void SetNomeRemetente(string nomeRemetente)
-    {
-        this->nomeRemetente = nomeRemetente;
-    }
-
-    void SetEnderecoRemetente(string enderecoRemetente)
-    {
-        this->enderecoRemetente = enderecoRemetente;
-    }
-
-    void SetCidadeRemetente(string cidadeRemetente)
-    {
-        this->cidadeRemetente = cidadeRemetente;
-    }
-
-    void SetEstadoRemetente(string estadoRemetente)
-    {
-        this->estadoRemetente = estadoRemetente;
-    }
-
-    void SetCepRemetente(string cepRemetente)
-    {
-        this->cepRemetente = cepRemetente;
-    }
-
-    void SetPeso(double peso)
-    {
-        this->peso = peso;
-    }
-
-    void SetPrecoKG(double precoKG)
-    {
-        this->precoKG = precoKG;
-    }
+    void SetNomeDestinatario(string nomeDestinatario);
+    void SetEnderecoDestinatario(string enderecoDestinatario);
+    void SetCidadeDestinatario(string cidadeDestinatario);
+    void SetEstadoDestinatario(string estadoDestinatario);
+    void SetCepDestinatario(string cepDestinatario);
+    void SetNomeRemetente(string nomeRemetente);
+    void SetEnderecoRemetente(string enderecoRemetente);
+    void SetCidadeRemetente(string cidadeRemetente);
+    void SetEstadoRemetente(string estadoRemetente);
+    void SetCepRemetente(string cepRemetente);
+    void SetPeso(double peso);
+    void SetPrecoKG(double precoKG);
     // construtores
     Pacote(string, string, string, string, string, string, string, string, string, string, double, double);
     // metodos

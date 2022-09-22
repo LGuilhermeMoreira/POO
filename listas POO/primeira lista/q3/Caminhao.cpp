@@ -46,9 +46,9 @@ float Caminhao::getcomprimento()
 
 // metodos
 
-void Caminhao::print_caminhao()
+void Caminhao::print()
 {
-    print_motor();
+    Motor::print();
     cout << "Caracteristicas do caminhao" << endl;
     cout << "altura: " << getaltura() << endl;
     cout << "tonelada: " << gettonelada() << endl;

@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-class Caminhao : public Motor, Veiculo
+class Caminhao : public Motor
 {
 private:
     float altura;
@@ -21,5 +21,5 @@ public:
     // construtores
     Caminhao(float peso, float velmax, float preco, int num_cilindros, float potencia, float altura, float tonelada, float comprimento);
     // metodos
-    void print_caminhao();
+    void print();
 };
