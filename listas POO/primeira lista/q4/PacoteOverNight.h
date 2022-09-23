@@ -1,10 +1,9 @@
 #include<iostream>
 #include<string>
-#pragma once
 #include"Pacote.h"
 using namespace std;
 
-class PacoteOverNight: public Pacote{
+class PacoteOverNight: protected Pacote{
     private:
         double taxaadicional;
     public:
@@ -15,6 +14,6 @@ class PacoteOverNight: public Pacote{
         // sets
         void settaxaadicional(double taxaadicional);
         // metodos
-        double calculacusto();
+        double CalculaCusto();
 };
 

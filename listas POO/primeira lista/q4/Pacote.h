@@ -1,11 +1,10 @@
 #include <iostream>
 #include <string>
-#pragma once
 using namespace std;
 
 class Pacote
 {
-private:
+protected:
     string nomeDestinatario;
     string enderecoDestinatario;
     string cidadeDestinatario;

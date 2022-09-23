@@ -19,6 +19,7 @@ void PacoteOverNight::settaxaadicional(double taxaadicional){
 }
 // metodos
 // terminar o calculacusto
-double PacoteOverNight::calculacusto(){
-
+double PacoteOverNight::CalculaCusto(){
+    double x = Pacote::CalculaCusto();
+    return (x + gettaxaadicional()) * this->peso;
 }
