@@ -20,22 +20,23 @@ Conta::Conta(double saldo){
 
 // metodos
 
-/* está faltando informação de como é calculado o valor de credito 
-e o valor de debito para gerar a mensagem de erro*/
-
 void Conta::print_saldo_credito(){
-    if(getsaldo() > getdebito){
-        cout << "saldo do credito: " << getsaldo() << endl; 
-    }else{
-        cout << "ERRO" << endl;
-    }
+    double c;
+    cout << "informe o valor que deseja creditar: ";
+    cin >> c;
+
+    setsaldo(c+this->saldo);
 }
 
 void Conta::print_saldo_debito(){
-    if (getsaldo() > getdebito){
-        cout << "saldo do debito: " << getsaldo() << endl;
+    double s;
+    cout << "informe o valor que deseja debitar: ";
+    cin >> s;
+
+    if(s > this->saldo){
+        cout << "Valor indisponivel" << endl;
+        return;
     }
-    else{
-        cout << "ERRO" << endl;
-    }
+
+    setsaldo(s-this->saldo);
 }

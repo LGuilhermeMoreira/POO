@@ -4,7 +4,9 @@
 using namespace std;
 
 // constructor
-Poupanca::Poupanca(double saldo):Conta(saldo){}
+Poupanca::Poupanca(double saldo,double rendimento):Conta(saldo){
+    setrendimento(rendimento);
+}
 
 // set
 void Poupanca::setrendimento(double rendimento){
@@ -13,10 +15,10 @@ void Poupanca::setrendimento(double rendimento){
 
 // get
 double Poupanca::getrendimento(){
-    return rendimento;
+    return this->rendimento;
 }
 
 // metodos
-double Poupanca::calcula_rendimento(){
-    return (getsaldo() * getrendimento());
+void Poupanca::calcula_rendimento(){
+    cout << "valor do rendimento: " << getsaldo() * getrendimento() << endl;
 }

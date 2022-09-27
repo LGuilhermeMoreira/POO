@@ -1,3 +1,5 @@
+#ifndef CONTACORRENTE_INCLUDED
+#define CONTACORRENTE_INCLUDED
 #include <iostream>
 #include <string>
 #include "Conta.h"
@@ -7,14 +9,16 @@ class Conta_corrente : public Conta
 {
 private:
     double taxa;
-
 public:
     // sets
     void settaxa(double);
     // gets
     double gettaxa();
     // constructor
-    Conta_corrente(double);
+    Conta_corrente(double,double);
     // metodos
-    double calcula_rendimento();
+    void taxa_credito();
+    void taxa_debito();
 };
+
+#endif

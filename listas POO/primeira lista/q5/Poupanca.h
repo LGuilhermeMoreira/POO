@@ -1,3 +1,5 @@
+#ifndef POUPANCA_INCLUDED
+#define POUPANCA_INCLUDED
 #include <iostream>
 #include <string>
 #include "Conta.h"
@@ -12,7 +14,9 @@ class Poupanca: public Conta{
         // gets
         double getrendimento();
         // constructor
-        Poupanca(double);
+        Poupanca(double,double);
         // metodos
-        double calcula_rendimento();
+        void calcula_rendimento();
 };
+
+#endif
