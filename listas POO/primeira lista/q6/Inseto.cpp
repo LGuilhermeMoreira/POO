@@ -1,5 +1,5 @@
 #include<iostream>
-#include"Inceto.h"
+#include"Inseto.h"
 
 // gets
 

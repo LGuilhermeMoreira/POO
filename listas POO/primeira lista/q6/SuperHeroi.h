@@ -1,5 +1,5 @@
 #include<iostream>
-#include"Inceto.h"
+#include"Inseto.h"
 #include"Humano.h"
 
 class SuperHeroi: public Humano,public Inceto{
