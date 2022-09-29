@@ -35,13 +35,13 @@ Fracao Fracao::operator+(Fracao &a){
 
 Fracao Fracao::operator-(Fracao &a){
     Fracao aux;
-    aux.denominador = this->denominador - a.denominador;
-    
-    if (this->numerodador - a.numerodador < 1) aux.numerodador = 1;
-    
-    else aux.numerodador = this->numerodador - a.numerodador;
-
-    return aux;
+    aux.numerodador = this->numerodador - a.numerodador;
+    if(this->denominador - a.denominador == 0){
+        aux.denominador = 1;
+    }
+    else{
+        aux.denominador = this->denominador - a.denominador;
+    }
 }
 
 Fracao Fracao::operator*(Fracao &a){
