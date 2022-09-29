@@ -1,3 +1,5 @@
+#ifndef PACOTE_INCLUDED
+#define PACOTE_INCLUDED
 #include <iostream>
 #include <string>
 using namespace std;
@@ -37,3 +39,5 @@ public:
     // metodos
     double CalculaCusto();
 };
+
+#endif

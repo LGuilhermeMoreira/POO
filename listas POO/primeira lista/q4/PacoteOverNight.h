@@ -1,3 +1,5 @@
+#ifndef PACOTEOVERNIGHT_INCLUDED
+#define PACOTEOVERNIGHT_INCLUDED
 #include<iostream>
 #include<string>
 #include"Pacote.h"
@@ -17,3 +19,4 @@ class PacoteOverNight: protected Pacote{
         double CalculaCusto();
 };
 
+#endif
