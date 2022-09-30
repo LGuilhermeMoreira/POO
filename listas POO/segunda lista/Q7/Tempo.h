@@ -22,6 +22,8 @@ public:
     void print();
     Tempo operator-(Tempo &aux);
     Tempo operator+(Tempo &aux);
+    Tempo somar(Tempo &a, Tempo &b);
+    Tempo subtrair(Tempo &a, Tempo &b);
 };
 
 #endif

@@ -70,3 +70,19 @@ Tempo Tempo::operator+(Tempo &aux){
     x.min = this->min + aux.min;
     return x;
 }
+
+Tempo Tempo::somar(Tempo &a, Tempo &b){
+    Tempo x;
+    x.hr = a.hr + b.hr;
+    x.seg = a.seg + b.seg;
+    x.min = a.min + b.min;
+    return x;
+}
+
+Tempo Tempo::subtrair(Tempo &a, Tempo &b){
+    Tempo x;
+    x.hr = a.hr - b.hr;
+    x.seg = a.seg - b.seg;
+    x.min = a.min - b.min;
+    return x;
+}

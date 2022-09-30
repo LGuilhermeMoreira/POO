@@ -16,6 +16,8 @@ public:
     Fracao operator*(Fracao &a);
     Fracao operator/(Fracao &a);
 
+    bool operator!=(Fracao &a);
+    bool operator==(Fracao &a);
     void div(double a, double b);
 
     void print();

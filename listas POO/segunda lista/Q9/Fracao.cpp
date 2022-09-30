@@ -57,3 +57,21 @@ Fracao Fracao::operator/(Fracao &a){
     aux.numerodador = this->numerodador / a.numerodador;
     return aux;
 }
+
+bool Fracao::operator!=(Fracao &a){
+    if(this->denominador != a.denominador && this->numerodador != a.numerodador){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+bool Fracao::operator==(Fracao &a){
+    if(this->denominador == a.denominador && this->numerodador == a.numerodador){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
