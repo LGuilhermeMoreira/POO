@@ -81,7 +81,7 @@ void Data::numdias(string mes)
         cont = 5;
     else if (mes == "junho")
         cont = 6;
-    else if (mes == "julio")
+    else if (mes == "julho")
         cont = 7;
     else if (mes == "agosto")
         cont = 8;
