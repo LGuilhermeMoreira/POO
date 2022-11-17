@@ -1,0 +1,3 @@
+classes abstratas são classes que não podem instanciadas, apenas herdadas tendo na maioria das vezes a prensença de metodos virtuais puros
+
+classes concretas são classes que podem ser e são instanciadas na função principal que normalemnte herdam as classes abstratas

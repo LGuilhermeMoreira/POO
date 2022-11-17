@@ -1,0 +1,2 @@
+Downcasting é o oposto a regra de orientação a objetos que declara objetos de uma classe derivada, sempre pode ser atribuído a variáveis ​​de uma classe base.
+Sem ela não é possivel atribuir a um objeto da classe derivada um da classe base.
