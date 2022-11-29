@@ -172,6 +172,10 @@ void cadastra_cd(CD &a){
 
 void show(vector<CD> &a, vector<DVD> &b){
     system("cls || clear");
+    if(a.size() == 0 && b.size() == 0){
+        cout << "Nao ha itens cadastrados" << endl << endl;
+        return;
+    }
     sort(a.begin(), a.end(), compara_cd);
     cout << "----------------------------------------" << endl;
     cout << "       CDs encontrados" << endl << endl;
@@ -337,7 +341,7 @@ bool compara_alfabeto_dvd(DVD a, DVD b){
 
 void pesquisa_por_data(vector<CD> &a, vector<DVD> &b){
     int ano;
-    cout << "Digite o ano que deseja pesquisar: " << endl;
+    cout << "Digite o ano que deseja pesquisar: ";
     cin >> ano;
     cin.ignore();
     vector<CD> cds_encontrados;
@@ -473,8 +477,19 @@ void pesquisa_titulo(vector<CD> &a, vector<DVD> &b){
             for(int k = 0; k < found.size(); k++){
                 if(aux_cd[i].getFaixas()[j] != found[k]) cont++;
             }
-            if(cont++ == found.size()){
+            if(cont == found.size()){
                 cout << "Faixa: " << aux_cd[i].getFaixas()[j] << endl;
+            }
+        }
+    }
+    for(int i = 0; i < aux_dvd.size(); i++){
+        for(int j = 0; j < aux_dvd[i].getFaixas().size(); j++){
+            int cont = 0;
+            for(int k = 0; k < found.size(); k++){
+                if(aux_dvd[i].getFaixas()[j] != found[k]) cont++;
+            }
+            if(cont == found.size()){
+                cout << "Faixa: " << aux_dvd[i].getFaixas()[j] << endl;
             }
         }
     }
